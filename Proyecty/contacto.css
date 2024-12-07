@@ -1,0 +1,156 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+}
+
+section > center {
+    margin-bottom: 2rem;
+}
+
+section > center img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+}
+
+section > center img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* === Estilo del Formulario === */
+#contacto {
+    background: hsl(197, 100%, 91%);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contacto h4 {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="apellido"],
+input[type="date"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #003468;
+    background-color: #fff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #aaaaaa;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #aaaaaa;
+}
+
+input[type="reset"]:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+footer {
+    margin-top: 2rem;
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+section {
+    justify-content: center;
+}
+
+.contenedor {
+display: flex;
+justify-content:flex-end;
+background-color: #4CAF50;
+align-items: center;
+padding: 2rem;
+}
+
+form{
+    margin: 1.5rem;
+    padding: 2;
+}
+.encabezado2{
+    text-align: left;
+color: #fff;
+margin-top: -140px;
+padding: 2rem; 
+
+}
+
+@media (max-width: 768px) {
+    .skills, .projects {
+      flex-direction: column;
+    }
+  }
